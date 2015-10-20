@@ -4,12 +4,14 @@
 # Question 1: Ruby objects and classes.
 # How would one find the class of the below objects.
 
-"Hello World"
-33
-65.89
+"Hello World" - can be classified as a sentence
+33 -  is an integer or fixed number
+65.89 -  is a float
 
 # Question 2: Booleans
 # What would be the result of executing the below statements
+
+if the numbers are 33 and 35 then it is true otherwise it is false.
 
 if 33 && 55
   puts "it's true"
@@ -18,15 +20,27 @@ else
 end
 
 # 2.1 Substitue "hello" && 4.5 for 33 && 55 above. What's the output?
+new string = hello_world.gsub(/hello/, '33')
+new string = replace 33.gsub(/33/,'65')
+
 # 2.2 Substitue nil && 88 for 33 && 55 above. What's the output?
+
+nil.gsub(/nil/,33)
+nil.gsub(/88/,55)
 # 2.4 Substitue 63.4 < 64. What's the output?
 
 # Question 3 :Strings
 
-# How would you (Yes, you can look up the String methods!):
+# How would you (Yes, you can look up the String methods!): by going to the ruby website.
 
 # 3.1. determine if a string is included another another string?
-# 3.2. determine if the length of a string?
+
+my_string = "abcdefg"
+if my_string.include? "cde"
+   puts "String includes 'cde'"
+end
+
+# 3.2. determine if the length of a string? puts text.lenght.
 # 3.3. Go from the string "eels in my hovercraft" to "fish in my sink" but don't
 # change the string "eels in my hovercraft"
 
